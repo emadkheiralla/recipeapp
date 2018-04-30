@@ -5,7 +5,6 @@ import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 
 import { BsModalService } from 'ngx-bootstrap/modal';
-import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -15,7 +14,6 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 export class RecipeDetailComponent implements OnInit {
   recipe: Recipe;
   id: number;
-  modalRef: BsModalRef;
 
   constructor(private recipeService: RecipeService,
               private route: ActivatedRoute,
