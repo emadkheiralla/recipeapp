@@ -1,0 +1,15 @@
+.center{
+  text-align: center;
+}
+
+.mycircle{
+  border-radius: 50%;
+  border: solid #4cae4c 8px;
+  border-color: #5cb85c;
+  width: 300px;
+  height: 300px;
+}
+
+.mySexyColor{
+  color: cornflowerblue;
+}

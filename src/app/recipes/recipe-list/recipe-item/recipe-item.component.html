@@ -1,0 +1,43 @@
+<ng-template #template>
+  <div class="modal-header" style="background-color: #4cae4c;">
+    <h4 class="modal-title"></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <router-outlet></router-outlet>
+  </div>
+</ng-template>
+
+<div style="display: table-row;">
+  <div style="box-shadow: 2px 2px 4px grey; position: relative; display: table-cell; border:solid grey 1px;width:200px; height: 260px;border-radius: 5%; margin-bottom: 5px;text-align:center;">
+
+      <h4 class="mySexyColor">{{ recipe.name }}</h4>
+      <div>
+        <img
+          [src]="recipe.imagePath"
+          alt="{{ recipe.name }}"
+          class="mycircle">
+      </div>
+    <br>
+      <p class="mySexyColor">{{ recipe.description }}</p>
+      <div class="setPosition">
+        <button style="cursor: pointer;"
+                [routerLink]="[index]"
+                routerLinkActive="active"
+                (click)="openModal(template)"
+                class="btn btn-success"
+                data-toggle="modal"
+                data-target="#exampleModalCenter">
+          Details
+        </button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
