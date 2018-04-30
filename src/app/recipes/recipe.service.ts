@@ -18,13 +18,21 @@ export class RecipeService {
         new Ingredient('Meat', 1),
         new Ingredient('French Fries', 20)
       ]),
-    new Recipe('Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
-      [
-        new Ingredient('Buns', 2),
-        new Ingredient('Meat', 1)
-      ])
+      new Recipe('Big Fat Burger',
+          'What else you need to say?',
+          'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+          [
+              new Ingredient('Buns', 2),
+              new Ingredient('Meat', 1)
+          ]),
+      new Recipe('Spaghetti and Meatballs',
+          'Yummy Pasghettis!',
+          'https://images-gmi-pmc.edge-generalmills.com/322885ff-f7cf-47fc-baf4-eeefc5ae9aee.jpg',
+          [
+              new Ingredient('Spaghetti', 2),
+              new Ingredient('Meat', 2),
+              new Ingredient('Sauce', 2)
+          ])
   ];
 
   constructor(private slService: ShoppingListService) {}
